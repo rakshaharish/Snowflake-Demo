@@ -1,0 +1,1 @@
+-- This SQL will demonstrate how records change with time in a SQL table
