@@ -19,4 +19,10 @@ This repository contains the data (CSV files) and SQL/Python code that will be u
 
 1. Implement SnowPark with Python
 2. Add another CSV source to show multiple table ingestion
-3. Time-Travel scenario implementation in 7th SQL file  
+3. Time-Travel scenario implementation in 7th SQL file
+
+## To Explore
+
+1. Snowflake Tasks
+2. Snowflake Streams
+
