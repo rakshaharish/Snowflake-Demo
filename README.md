@@ -25,4 +25,5 @@ This repository contains the data (CSV files) and SQL/Python code that will be u
 
 1. Snowflake Tasks
 2. Snowflake Streams
+3. Resource Optimization - Cost control
 
