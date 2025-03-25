@@ -5,7 +5,7 @@ This repository contains the data (CSV files) and SQL/Python code that will be u
 2. Folder "SQLs" contains the SQL codes in sequence to perform end-to-end ETL demo on snowflake.
 3. Folder "Output Snowflake tables" contains the outputs of the SQL code.
 
-## Steps for Implementation
+## Steps for SQL Demo Implementation
 
 1. In snowflake, create the data warehouse called "etl_wh" using the SQL "1. Warehouse & DB Creation.sql". In this warehouse create the "nyc_taxi_demo_db" database.
 2. Create 3 schemas in the "nyc_taxi_demo_db" database - (a) raw_layer (b) staging_layer (c) serving_layer
@@ -15,11 +15,16 @@ This repository contains the data (CSV files) and SQL/Python code that will be u
 6. Finally, to build the serving_layer table from the staging_layer table, execute the SQL "5. Serving Layer.sql"
 7. Optional - To check the account billing history incurred due to ETL implementation, execute  the SQL "6. Billing History Tracker.sql"
 
+## Steps for Python-Snowpark Demo Implementation
+
+1. Set the role as "Account Admin" for the snowflake warehouse "etl_wh"
+2. Select the database as "nyc_taxi_demo_db" with the relevant schema
+3. Assumption : The schemas and the database are already created during the SQL demo execution
+4. Run either of the 2 Python files to execute the ETL demo in snowflake using Python+SnowPark framework
+
 ## To Do
 
-1. Implement SnowPark with Python
-2. Add another CSV source to show multiple table ingestion
-3. Time-Travel scenario implementation in 7th SQL file
+1. Time-Travel scenario implementation in 7th SQL file
 
 ## To Explore
 
