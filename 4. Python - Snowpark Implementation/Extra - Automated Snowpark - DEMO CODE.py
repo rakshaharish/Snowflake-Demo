@@ -1,6 +1,7 @@
 # Step 1: Install Snowflake Connector & Snowpark
 ## pip install snowflake-connector-python snowflake-snowpark-python pandas
 
+## Note: The below code is executed from local / VS Code. It needs snowsql CLI to be set up.
 # Step 2: Python Script to Automate Data Processing
 from snowflake.snowpark import Session
 from snowflake.snowpark.functions import col
