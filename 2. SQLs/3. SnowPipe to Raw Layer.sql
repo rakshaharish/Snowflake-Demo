@@ -22,7 +22,8 @@ CREATE OR REPLACE TABLE nyc_taxi_demo_db.raw_layer.taxi_data (
 -- (4) Create a snowpipe to ingest CSV data file into a snowflake table
 COPY INTO nyc_taxi_demo_db.raw_layer.taxi_data
 FROM @github_stage
-FILE_FORMAT = (TYPE = 'CSV' FIELD_OPTIONALLY_ENCLOSED_BY='"');
+FILE_FORMAT = (TYPE = 'CSV' FIELD_OPTIONALLY_ENCLOSED_BY='"')
+ON_ERROR = CONTINUE;
 
 -- (5) View the data in the raw data layer table
 SELECT * FROM nyc_taxi_demo_db.raw_layer.taxi_data;
