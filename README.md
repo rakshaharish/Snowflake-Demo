@@ -32,4 +32,8 @@ This repository contains the data (CSV files) and SQL/Python code that will be u
 1. Snowflake Tasks
 2. Snowflake Streams
 3. Resource Optimization - Cost control
+4. Data Mesh Architecture on Snowflake
+5. GitHub integration with snowflake => How to inject a git repo into the snowflake workspace
+6. S3/ADLS SnowPipe to Snowflake
+7. Monitoring the efficiency/time for executing snow SQL vs Python + SnowPark
 
